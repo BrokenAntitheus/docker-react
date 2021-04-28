@@ -4,4 +4,5 @@ COPY package.json .
 RUN npm install
 RUN npm config set unsafe-perm true
 COPY . .
+EXPOSE 80
 CMD ["npm", "run", "start"]
