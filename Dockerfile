@@ -8,4 +8,4 @@ RUN npm run build
 FROM nginx
 EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
-CMD ["/usr/sbin/nginx","/etc/nginx/nginx.conf"]
+CMD ["/usr/sbin/nginx", "-c", "/etc/nginx/nginx.conf"]
