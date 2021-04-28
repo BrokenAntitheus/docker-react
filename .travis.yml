@@ -5,8 +5,8 @@ sudo: required
 services:
   - docker
 
-  before_install:
-    - docker build -f Dockerfile.dev -t antitheus/docker-react .
+before_install:
+  - docker build -f Dockerfile.dev -t antitheus/docker-react .
 
-  script:
-    - docker run antitheus/docker-react npm run test -- --coverage
+script:
+  - docker run antitheus/docker-react npm run test -- --coverage
