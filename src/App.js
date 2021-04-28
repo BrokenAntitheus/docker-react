@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Antitheus is getting the hang of things
+        I was changed by Antitheus
         </p>
         <a
           className="App-link"
